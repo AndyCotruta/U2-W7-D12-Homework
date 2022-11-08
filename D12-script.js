@@ -11,7 +11,7 @@ let loadSecondaryImagesButton = document.querySelector(
 );
 loadSecondaryImagesButton.addEventListener("click", () => {
   let searchedValue = search.value;
-  searchedText.innerHTML = `This is what you searched for: clouds`;
+  searchedText.innerHTML = `This is what you see: Clouds Photos`;
   let container = document.querySelector(".row");
   search.value = "";
   fetch(`https://api.pexels.com/v1/search?query=clouds`, options)
@@ -55,7 +55,7 @@ loadSecondaryImagesButton.addEventListener("click", () => {
 let loadImagesButton = document.querySelector(".load-images");
 loadImagesButton.addEventListener("click", () => {
   let searchedValue = search.value;
-  searchedText.innerHTML = `This is what you searched for: nature`;
+  searchedText.innerHTML = `This is what you see: Nature Photos`;
   let container = document.querySelector(".row");
   search.value = "";
   fetch(`https://api.pexels.com/v1/search?query=nature`, options)
