@@ -47,9 +47,7 @@ loadSecondaryImagesButton.addEventListener("click", () => {
                                   `;
       }
       let hideButtonsArray = document.getElementsByClassName("hide-button");
-      console.log(hideButtonsArray);
       let cardsArray = document.getElementsByClassName("card");
-      console.log(cardsArray);
       for (let hideButton of hideButtonsArray) {
         hideButton.addEventListener("click", () => {
           console.log("The hide button was clicked");
@@ -100,9 +98,9 @@ loadImagesButton.addEventListener("click", () => {
                                   `;
       }
       let hideButtonsArray = document.getElementsByClassName("hide-button");
-      console.log(hideButtonsArray);
+
       let cardsArray = document.getElementsByClassName("card");
-      console.log(cardsArray);
+
       for (let hideButton of hideButtonsArray) {
         hideButton.addEventListener("click", () => {
           console.log("The hide button was clicked");
@@ -155,9 +153,9 @@ searchButton.addEventListener("click", () => {
                                   `;
       }
       let hideButtonsArray = document.getElementsByClassName("hide-button");
-      console.log(hideButtonsArray);
+
       let cardsArray = document.getElementsByClassName("card");
-      console.log(cardsArray);
+
       for (let hideButton of hideButtonsArray) {
         hideButton.addEventListener("click", () => {
           console.log("The hide button was clicked");
