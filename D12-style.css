@@ -3,7 +3,7 @@
 }
 
 .card-body {
-  height: 250px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -13,4 +13,9 @@
 
 .card-body p {
   font-size: 1rem;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
 }

@@ -19,7 +19,6 @@ loadSecondaryImagesButton.addEventListener("click", () => {
     .then((response) => {
       let dataArray = response.photos;
       for (let data of dataArray) {
-        console.log(dataArray);
         container.innerHTML += `
       <div class="col-sm-6 col-md-4 col-xl-4 mt-2">
       
@@ -31,10 +30,10 @@ loadSecondaryImagesButton.addEventListener("click", () => {
                     
                                       <div class="d-flex justify-content-between align-items-center">
          <div class="btn-group">
-        <button type="button" class="btn btn-sm btn-outline-secondary">
+        <button type="button" class="btn btn-sm btn-outline-secondary view-button">
               View
             </button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">
+            <button type="button" class="btn btn-sm btn-outline-secondary hide-button">
               Hide
             </button>
          </div>
@@ -46,6 +45,16 @@ loadSecondaryImagesButton.addEventListener("click", () => {
                                   </div>
                                   
                                   `;
+      }
+      let hideButtonsArray = document.getElementsByClassName("hide-button");
+      console.log(hideButtonsArray);
+      let cardsArray = document.getElementsByClassName("card");
+      console.log(cardsArray);
+      for (let hideButton of hideButtonsArray) {
+        hideButton.addEventListener("click", () => {
+          console.log("The hide button was clicked");
+          hideButton.parentNode.parentNode.parentNode.parentNode.remove();
+        });
       }
     })
     .catch((err) => console.error(err));
@@ -63,7 +72,6 @@ loadImagesButton.addEventListener("click", () => {
     .then((response) => {
       let dataArray = response.photos;
       for (let data of dataArray) {
-        console.log(dataArray);
         container.innerHTML += `
       <div class="col-sm-6 col-md-4 col-xl-4 mt-2">
       
@@ -75,10 +83,10 @@ loadImagesButton.addEventListener("click", () => {
                     
                                       <div class="d-flex justify-content-between align-items-center">
          <div class="btn-group">
-        <button type="button" class="btn btn-sm btn-outline-secondary">
+        <button type="button" class="btn btn-sm btn-outline-secondary view-button">
               View
             </button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">
+            <button type="button" class="btn btn-sm btn-outline-secondary hide-button">
               Hide
             </button>
          </div>
@@ -90,6 +98,16 @@ loadImagesButton.addEventListener("click", () => {
                                   </div>
                                   
                                   `;
+      }
+      let hideButtonsArray = document.getElementsByClassName("hide-button");
+      console.log(hideButtonsArray);
+      let cardsArray = document.getElementsByClassName("card");
+      console.log(cardsArray);
+      for (let hideButton of hideButtonsArray) {
+        hideButton.addEventListener("click", () => {
+          console.log("The hide button was clicked");
+          hideButton.parentNode.parentNode.parentNode.parentNode.remove();
+        });
       }
     })
     .catch((err) => console.error(err));
@@ -109,7 +127,6 @@ searchButton.addEventListener("click", () => {
     .then((response) => {
       let dataArray = response.photos;
       for (let data of dataArray) {
-        console.log(dataArray);
         container.innerHTML += `
       <div class="col-sm-6 col-md-4 col-xl-4 mt-2">
       
@@ -121,10 +138,10 @@ searchButton.addEventListener("click", () => {
                     
                                       <div class="d-flex justify-content-between align-items-center">
          <div class="btn-group">
-        <button type="button" class="btn btn-sm btn-outline-secondary">
+        <button type="button" class="btn btn-sm btn-outline-secondary view-button">
               View
             </button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">
+            <button type="button" class="btn btn-sm btn-outline-secondary hide-button">
               Hide
             </button>
          </div>
@@ -136,6 +153,16 @@ searchButton.addEventListener("click", () => {
                                   </div>
                                   
                                   `;
+      }
+      let hideButtonsArray = document.getElementsByClassName("hide-button");
+      console.log(hideButtonsArray);
+      let cardsArray = document.getElementsByClassName("card");
+      console.log(cardsArray);
+      for (let hideButton of hideButtonsArray) {
+        hideButton.addEventListener("click", () => {
+          console.log("The hide button was clicked");
+          hideButton.parentNode.parentNode.parentNode.parentNode.remove();
+        });
       }
     })
     .catch((err) => console.error(err));
