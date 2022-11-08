@@ -51,7 +51,7 @@ loadSecondaryImagesButton.addEventListener("click", () => {
       for (let hideButton of hideButtonsArray) {
         hideButton.addEventListener("click", () => {
           console.log("The hide button was clicked");
-          hideButton.parentNode.parentNode.parentNode.parentNode.remove();
+          hideButton.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
         });
       }
     })
@@ -104,7 +104,7 @@ loadImagesButton.addEventListener("click", () => {
       for (let hideButton of hideButtonsArray) {
         hideButton.addEventListener("click", () => {
           console.log("The hide button was clicked");
-          hideButton.parentNode.parentNode.parentNode.parentNode.remove();
+          hideButton.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
         });
       }
     })
@@ -159,7 +159,7 @@ searchButton.addEventListener("click", () => {
       for (let hideButton of hideButtonsArray) {
         hideButton.addEventListener("click", () => {
           console.log("The hide button was clicked");
-          hideButton.parentNode.parentNode.parentNode.parentNode.remove();
+          hideButton.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
         });
       }
     })
